@@ -14,7 +14,7 @@ export const customDomainName = "kuki.jonsam.site";
 export const siteKeywords = "javascript代码片段";
 
 // 同时修改 `docs/.vuepress/styles/palette.styl` 中 `$accentColor`
-export const siteThemeColor = "#033643";
+export const siteThemeColor = "#DB9441";
 
 export const siteIconFont = "//at.alicdn.com/t/font_3314748_9xij1pv3h4i.css";
 
