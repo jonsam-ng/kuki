@@ -2,23 +2,23 @@
  *                                 页面配置【建站自定义】
  ******************************************************************************************/
 
-export const siteName = "Fancy Note Starter";
+export const siteName = "Kuki";
 
 export const siteDesc =
-  "A simple starter to create note site using vuepress and github pages.";
+  "Magic and common used javascript code snippets.有趣、通用的 JavaScript 代码片段。";
 
 // 是否使用 github pages 的自定义域名
-export const useCustomDomainName = false;
-export const customDomainName = "template.jonsam.site";
+export const useCustomDomainName = true;
+export const customDomainName = "kuki.jonsam.site";
 
-export const siteKeywords = "笔记模板,静态站点";
+export const siteKeywords = "javascript代码片段";
 
 // 同时修改 `docs/.vuepress/styles/palette.styl` 中 `$accentColor`
 export const siteThemeColor = "#033643";
 
 export const siteIconFont = "//at.alicdn.com/t/font_3314748_9xij1pv3h4i.css";
 
-export const siteRepo = "fancy-note-starter";
+export const siteRepo = "kuki";
 
 export const siteLicense = "MIT";
 
@@ -33,7 +33,7 @@ export const siteBlogger = {
   avatar:
     "https://www.jonsam.site/wp-content/uploads/2019/10/c1fbc401c64937aaec6cb53359e7c57eabd8e477-e1570649725791.gif",
   name: "Jonsam NG",
-  slogan: "让有意义的事变得有意思，让有意思的事变得有意义",
+  slogan: "如何让一滴水不干涸，那就是让它融入大海",
 };
 
 export const siteFooter = {

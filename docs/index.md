@@ -1,10 +1,10 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Fancy Note Starter
-tagline: 更快更好的记录笔记，分享笔记。
+heroText: Kuki
+tagline: Magic and common used javascript code snippets.有趣、通用的 JavaScript 代码片段。
 actionText: 开始上手 →
-actionLink: /example/index/
+actionLink: /common/index/
 bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
