@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Common：part02 | Kuki</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3314748_9xij1pv3h4i.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/img/manifest.json">
+    <link rel="apple-touch-icon" href="/img/android-chrome-192x192.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="Magic and common used javascript code snippets.有趣、通用的 JavaScript 代码片段。">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="keywords" content="javascript代码片段">
+    <meta name="theme-color" content="#DB9441">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.7aa83782.css" as="style"><link rel="preload" href="/assets/js/app.7687b9df.js" as="script"><link rel="preload" href="/assets/js/11.d84cac13.js" as="script"><link rel="preload" href="/assets/js/34.04ec7b42.js" as="script"><link rel="preload" href="/assets/js/20.6ea0bf9f.js" as="script"><link rel="preload" href="/assets/js/15.ed16f0da.js" as="script"><link rel="preload" href="/assets/js/13.ed8cf36c.js" as="script"><link rel="prefetch" href="/assets/js/1.fd048565.js"><link rel="prefetch" href="/assets/js/12.63ce8dc9.js"><link rel="prefetch" href="/assets/js/14.5695ce61.js"><link rel="prefetch" href="/assets/js/16.299d764a.js"><link rel="prefetch" href="/assets/js/17.27416899.js"><link rel="prefetch" href="/assets/js/18.31c32a59.js"><link rel="prefetch" href="/assets/js/19.5285d173.js"><link rel="prefetch" href="/assets/js/21.8bf7936d.js"><link rel="prefetch" href="/assets/js/22.a0a27a49.js"><link rel="prefetch" href="/assets/js/23.bf5e4a57.js"><link rel="prefetch" href="/assets/js/24.d438b542.js"><link rel="prefetch" href="/assets/js/25.ffca6a0c.js"><link rel="prefetch" href="/assets/js/26.5156c732.js"><link rel="prefetch" href="/assets/js/27.42d80276.js"><link rel="prefetch" href="/assets/js/28.1423b035.js"><link rel="prefetch" href="/assets/js/29.a81990f8.js"><link rel="prefetch" href="/assets/js/30.c3ca9e20.js"><link rel="prefetch" href="/assets/js/31.e03be712.js"><link rel="prefetch" href="/assets/js/32.e1d46a35.js"><link rel="prefetch" href="/assets/js/33.8ddfd517.js"><link rel="prefetch" href="/assets/js/35.768bbe1d.js"><link rel="prefetch" href="/assets/js/36.928cd6e2.js"><link rel="prefetch" href="/assets/js/37.2dee7df3.js"><link rel="prefetch" href="/assets/js/38.3f95c73b.js"><link rel="prefetch" href="/assets/js/39.a420c21b.js"><link rel="prefetch" href="/assets/js/40.887c5396.js"><link rel="prefetch" href="/assets/js/41.f37a2cff.js"><link rel="prefetch" href="/assets/js/42.bce847af.js"><link rel="prefetch" href="/assets/js/43.043998c2.js"><link rel="prefetch" href="/assets/js/44.3041ca21.js"><link rel="prefetch" href="/assets/js/45.54087af1.js"><link rel="prefetch" href="/assets/js/46.8c56343c.js"><link rel="prefetch" href="/assets/js/47.4978f3c2.js"><link rel="prefetch" href="/assets/js/48.9a18071c.js"><link rel="prefetch" href="/assets/js/49.0b16336c.js"><link rel="prefetch" href="/assets/js/50.9e781ea3.js"><link rel="prefetch" href="/assets/js/51.70b0c8b2.js"><link rel="prefetch" href="/assets/js/52.cf347cf0.js"><link rel="prefetch" href="/assets/js/53.b03fa5ce.js"><link rel="prefetch" href="/assets/js/54.905928a8.js"><link rel="prefetch" href="/assets/js/55.fab36b3f.js"><link rel="prefetch" href="/assets/js/56.1cf72411.js"><link rel="prefetch" href="/assets/js/57.ebf0a614.js"><link rel="prefetch" href="/assets/js/58.212994ea.js"><link rel="prefetch" href="/assets/js/59.3c0eb4b9.js"><link rel="prefetch" href="/assets/js/60.ba67800f.js"><link rel="prefetch" href="/assets/js/61.576baf42.js"><link rel="prefetch" href="/assets/js/62.a161919e.js"><link rel="prefetch" href="/assets/js/63.27dc39c0.js"><link rel="prefetch" href="/assets/js/64.76ed5a25.js"><link rel="prefetch" href="/assets/js/65.7afe87ed.js"><link rel="prefetch" href="/assets/js/66.e1896d64.js"><link rel="prefetch" href="/assets/js/vendors~aplayer.f96278d0.js"><link rel="prefetch" href="/assets/js/vendors~artplayer.a9db8d7e.js"><link rel="prefetch" href="/assets/js/vendors~dash.a7433c80.js"><link rel="prefetch" href="/assets/js/vendors~dplayer.c29ddcb1.js"><link rel="prefetch" href="/assets/js/vendors~hls.0e6be8f9.js"><link rel="prefetch" href="/assets/js/vendors~mpegts.749d0941.js"><link rel="prefetch" href="/assets/js/vendors~shaka-player.e0c261e1.js"><link rel="prefetch" href="/assets/js/vendors~webtorrent.537bb66c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7aa83782.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="Kuki" class="logo"> <span class="site-name can-hide">Kuki</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/snippet/index/" class="nav-link">手写</a></div><div class="nav-item"><a href="/common/index/" class="nav-link">通用</a></div><div class="nav-item"><a href="/polyfill/index/" class="nav-link">Polyfill</a></div><div class="nav-item"><a href="/fastest/index/" class="nav-link">Fastest</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><!----> <span class="title" style="display:;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">关于</a></li><li class="dropdown-item"><!----> <a href="/slides/#/1" class="nav-link">幻灯片</a></li></ul></div></div><div class="nav-item"><a href="https://www.jonsam.site" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/kuki" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://www.jonsam.site/wp-content/uploads/2019/10/c1fbc401c64937aaec6cb53359e7c57eabd8e477-e1570649725791.gif"> <div class="blogger-info"><h3>Jonsam NG</h3> <span>如何让一滴水不干涸，那就是让它融入大海</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/snippet/index/" class="nav-link">手写</a></div><div class="nav-item"><a href="/common/index/" class="nav-link">通用</a></div><div class="nav-item"><a href="/polyfill/index/" class="nav-link">Polyfill</a></div><div class="nav-item"><a href="/fastest/index/" class="nav-link">Fastest</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><!----> <span class="title" style="display:;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">关于</a></li><li class="dropdown-item"><!----> <a href="/slides/#/1" class="nav-link">幻灯片</a></li></ul></div></div><div class="nav-item"><a href="https://www.jonsam.site" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/kuki" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/common/index/" class="sidebar-link">开始上手</a></li><li><a href="/common/plan/" class="sidebar-link">Plan 计划</a></li><li><a href="/common/roadmap/" class="sidebar-link">Roadmap 路线</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>snippets</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/common/core/index/" class="sidebar-link">本章导读</a></li><li><a href="/common/core/p1/" class="sidebar-link">Common：Part01</a></li><li><a href="/common/core/p2/" aria-current="page" class="active sidebar-link">Common：part02</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/common/core/p2/#bind" class="sidebar-link">bind</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#kindof-kindoftest" class="sidebar-link">kindOf &amp;&amp; kindOfTest</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isarray" class="sidebar-link">isArray</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isundefined" class="sidebar-link">isUndefined</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isbuffer" class="sidebar-link">isBuffer</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isarraybuffer" class="sidebar-link">isArrayBuffer</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isarraybufferview" class="sidebar-link">isArrayBufferView</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isstring" class="sidebar-link">isString</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isnumber" class="sidebar-link">isNumber</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isobject" class="sidebar-link">isObject</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isplainobject" class="sidebar-link">isPlainObject</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isdate" class="sidebar-link">isDate</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isfile" class="sidebar-link">isFile</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isblob" class="sidebar-link">isBlob</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isfilelist" class="sidebar-link">isFileList</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isfunction" class="sidebar-link">isFunction</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isstream" class="sidebar-link">isStream</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isformdata" class="sidebar-link">isFormData</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isurlsearchparams" class="sidebar-link">isURLSearchParams</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#trim" class="sidebar-link">trim</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#isstandardbrowserenv" class="sidebar-link">isStandardBrowserEnv</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#foreach" class="sidebar-link">forEach</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#merge" class="sidebar-link">merge</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#extend" class="sidebar-link">extend</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#stripbom" class="sidebar-link">stripBOM</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#inherits" class="sidebar-link">inherits</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#toflatobject" class="sidebar-link">toFlatObject</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#endswith" class="sidebar-link">endsWith</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#toarray" class="sidebar-link">toArray</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#istypedarray" class="sidebar-link">isTypedArray</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#foreachentry" class="sidebar-link">forEachEntry</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#matchall" class="sidebar-link">matchAll</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#ishtmlform" class="sidebar-link">isHTMLForm</a></li><li class="sidebar-sub-header level2"><a href="/common/core/p2/#hasownproperty" class="sidebar-link">hasOwnProperty</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-6"><div class="articleInfo-wrap" data-v-3f4da221><div class="articleInfo" data-v-3f4da221><ul class="breadcrumbs" data-v-3f4da221><li data-v-3f4da221><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-3f4da221></a></li> <li data-v-3f4da221><a href="/categories/?category=common" title="分类" data-v-3f4da221>common</a></li><li data-v-3f4da221><a href="/categories/?category=snippets" title="分类" data-v-3f4da221>snippets</a></li></ul> <div class="info" data-v-3f4da221><div title="作者" class="author iconfont icon-touxiang" data-v-3f4da221><a href="https://github.com/jonsam-ng" target="_blank" title="作者" class="beLink" data-v-3f4da221>jonsam</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-3f4da221><a href="javascript:;" data-v-3f4da221>2022-06-26</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">Common：part02<!----></h1>  <div class="theme-vdoing-content content__default"><p>utils from <a href="https://github.com/axios/axios/blob/v2.x/lib/utils.js" target="_blank" rel="noopener noreferrer">axios<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="bind"><a href="#bind" class="header-anchor">#</a> bind</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">bind</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> thisArg</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">wrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>thisArg<span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="kindof-kindoftest"><a href="#kindof-kindoftest" class="header-anchor">#</a> kindOf &amp;&amp; kindOfTest</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// utils is a library of generic helper functions non-specific to axios</span>
+
+<span class="token keyword">var</span> toString <span class="token operator">=</span> <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString<span class="token punctuation">;</span>
+
+<span class="token comment">// eslint-disable-next-line func-names</span>
+<span class="token keyword">var</span> kindOf <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">cache</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// eslint-disable-next-line func-names</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">thing</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> cache<span class="token punctuation">[</span>str<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">(</span>cache<span class="token punctuation">[</span>str<span class="token punctuation">]</span> <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  type <span class="token operator">=</span> type<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">isKindOf</span><span class="token punctuation">(</span><span class="token parameter">thing</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">kindOf</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span> <span class="token operator">===</span> type<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="isarray"><a href="#isarray" class="header-anchor">#</a> isArray</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is an Array, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isArray</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isundefined"><a href="#isundefined" class="header-anchor">#</a> isUndefined</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isUndefined</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">typeof</span> val <span class="token operator">===</span> <span class="token string">'undefined'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="isbuffer"><a href="#isbuffer" class="header-anchor">#</a> isBuffer</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token comment">/**
+ * Determine if a value is a Buffer
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Buffer, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isBuffer</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> val <span class="token operator">!==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">isUndefined</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>constructor <span class="token operator">!==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">isUndefined</span><span class="token punctuation">(</span>val<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span>
+    <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> val<span class="token punctuation">.</span>constructor<span class="token punctuation">.</span>isBuffer <span class="token operator">===</span> <span class="token string">'function'</span> <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>constructor<span class="token punctuation">.</span><span class="token function">isBuffer</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="isarraybuffer"><a href="#isarraybuffer" class="header-anchor">#</a> isArrayBuffer</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token comment">/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */</span>
+<span class="token keyword">var</span> isArrayBuffer <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'ArrayBuffer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="isarraybufferview"><a href="#isarraybufferview" class="header-anchor">#</a> isArrayBufferView</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token comment">/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isArrayBufferView</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> result<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> ArrayBuffer <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>ArrayBuffer<span class="token punctuation">.</span>isView<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> ArrayBuffer<span class="token punctuation">.</span><span class="token function">isView</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>val<span class="token punctuation">.</span>buffer<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token function">isArrayBuffer</span><span class="token punctuation">(</span>val<span class="token punctuation">.</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="isstring"><a href="#isstring" class="header-anchor">#</a> isString</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a String, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isString</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">typeof</span> val <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isnumber"><a href="#isnumber" class="header-anchor">#</a> isNumber</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Number, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isNumber</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">typeof</span> val <span class="token operator">===</span> <span class="token string">'number'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isobject"><a href="#isobject" class="header-anchor">#</a> isObject</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is an Object, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isObject</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> val <span class="token operator">!==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> val <span class="token operator">===</span> <span class="token string">'object'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isplainobject"><a href="#isplainobject" class="header-anchor">#</a> isPlainObject</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a plain Object
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a plain Object, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isPlainObject</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">kindOf</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'object'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> prototype <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> prototype <span class="token operator">===</span> <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="isdate"><a href="#isdate" class="header-anchor">#</a> isDate</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Date, otherwise false
+ */</span>
+<span class="token keyword">var</span> isDate <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'Date'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="isfile"><a href="#isfile" class="header-anchor">#</a> isFile</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a File, otherwise false
+ */</span>
+<span class="token keyword">var</span> isFile <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'File'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="isblob"><a href="#isblob" class="header-anchor">#</a> isBlob</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */</span>
+<span class="token keyword">var</span> isBlob <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'Blob'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="isfilelist"><a href="#isfilelist" class="header-anchor">#</a> isFileList</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a FileList
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a File, otherwise false
+ */</span>
+<span class="token keyword">var</span> isFileList <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'FileList'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="isfunction"><a href="#isfunction" class="header-anchor">#</a> isFunction</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a Function
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Function, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isFunction</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'[object Function]'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isstream"><a href="#isstream" class="header-anchor">#</a> isStream</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a Stream
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isStream</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">isObject</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isFunction</span><span class="token punctuation">(</span>val<span class="token punctuation">.</span>pipe<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isformdata"><a href="#isformdata" class="header-anchor">#</a> isFormData</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} thing The value to test
+ *
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isFormData</span><span class="token punctuation">(</span><span class="token parameter">thing</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> pattern <span class="token operator">=</span> <span class="token string">'[object FormData]'</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> thing <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token keyword">typeof</span> FormData <span class="token operator">===</span> <span class="token string">'function'</span> <span class="token operator">&amp;&amp;</span> thing <span class="token keyword">instanceof</span> <span class="token class-name">FormData</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+    <span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span> <span class="token operator">===</span> pattern <span class="token operator">||</span>
+    <span class="token punctuation">(</span><span class="token function">isFunction</span><span class="token punctuation">(</span>thing<span class="token punctuation">.</span>toString<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> thing<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> pattern<span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="isurlsearchparams"><a href="#isurlsearchparams" class="header-anchor">#</a> isURLSearchParams</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {Object} val The value to test
+ *
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */</span>
+<span class="token keyword">var</span> isURLSearchParams <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'URLSearchParams'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="trim"><a href="#trim" class="header-anchor">#</a> trim</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ *
+ * @returns {String} The String freed of excess whitespace
+ */</span>
+<span class="token keyword">function</span> <span class="token function">trim</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> str<span class="token punctuation">.</span>trim <span class="token operator">?</span> str<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="isstandardbrowserenv"><a href="#isstandardbrowserenv" class="header-anchor">#</a> isStandardBrowserEnv</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -&gt; undefined
+ *  typeof document -&gt; undefined
+ *
+ * react-native:
+ *  navigator.product -&gt; 'ReactNative'
+ * nativescript
+ *  navigator.product -&gt; 'NativeScript' or 'NS'
+ *
+ * @returns {boolean}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">isStandardBrowserEnv</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> product<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> navigator <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+    <span class="token punctuation">(</span>product <span class="token operator">=</span> navigator<span class="token punctuation">.</span>product<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'ReactNative'</span> <span class="token operator">||</span>
+    product <span class="token operator">===</span> <span class="token string">'NativeScript'</span> <span class="token operator">||</span>
+    product <span class="token operator">===</span> <span class="token string">'NS'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> document <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h2 id="foreach"><a href="#foreach" class="header-anchor">#</a> forEach</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ *
+ * @returns {void}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">obj<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Don't bother if no value provided</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>obj <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> obj <span class="token operator">===</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// Force an array if not already something iterable</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> obj <span class="token operator">!==</span> <span class="token string">'object'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*eslint no-param-reassign:0*/</span>
+    obj <span class="token operator">=</span> <span class="token punctuation">[</span>obj<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isArray</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Iterate over array values</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> obj<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> obj<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Iterate over object keys</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> key<span class="token punctuation">,</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><h2 id="merge"><a href="#merge" class="header-anchor">#</a> merge</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ *
+ * @returns {Object} Result of all merge properties
+ */</span>
+<span class="token keyword">function</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token comment">/* obj1, obj2, obj3, ... */</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">assignValue</span><span class="token punctuation">(</span><span class="token parameter">val<span class="token punctuation">,</span> key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isPlainObject</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isPlainObject</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isPlainObject</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isArray</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> val<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> val<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> arguments<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">forEach</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> assignValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="extend"><a href="#extend" class="header-anchor">#</a> extend</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ *
+ * @returns {Object} The resulting value of object a
+ */</span>
+<span class="token keyword">function</span> <span class="token function">extend</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> thisArg</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">forEach</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">assignValue</span><span class="token punctuation">(</span><span class="token parameter">val<span class="token punctuation">,</span> key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>thisArg <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> val <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      a<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">bind</span><span class="token punctuation">(</span>val<span class="token punctuation">,</span> thisArg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      a<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> val<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="stripbom"><a href="#stripbom" class="header-anchor">#</a> stripBOM</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+ *
+ * @param {string} content with BOM
+ *
+ * @returns {string} content value without BOM
+ */</span>
+<span class="token keyword">function</span> <span class="token function">stripBOM</span><span class="token punctuation">(</span><span class="token parameter">content</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>content<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token number">0xFEFF</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    content <span class="token operator">=</span> content<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> content<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="inherits"><a href="#inherits" class="header-anchor">#</a> inherits</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Inherit the prototype methods from one constructor into another
+ * @param {function} constructor
+ * @param {function} superConstructor
+ * @param {object} [props]
+ * @param {object} [descriptors]
+ *
+ * @returns {void}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">inherits</span><span class="token punctuation">(</span><span class="token parameter">constructor<span class="token punctuation">,</span> superConstructor<span class="token punctuation">,</span> props<span class="token punctuation">,</span> descriptors</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  constructor<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>superConstructor<span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> descriptors<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">=</span> constructor<span class="token punctuation">;</span>
+  props <span class="token operator">&amp;&amp;</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="toflatobject"><a href="#toflatobject" class="header-anchor">#</a> toFlatObject</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Resolve object with deep prototype chain to a flat object
+ * @param {Object} sourceObj source object
+ * @param {Object} [destObj]
+ * @param {Function|Boolean} [filter]
+ * @param {Function} [propFilter]
+ *
+ * @returns {Object}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">toFlatObject</span><span class="token punctuation">(</span><span class="token parameter">sourceObj<span class="token punctuation">,</span> destObj<span class="token punctuation">,</span> filter<span class="token punctuation">,</span> propFilter</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> props<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> i<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> prop<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> merged <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  destObj <span class="token operator">=</span> destObj <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token comment">// eslint-disable-next-line no-eq-null,eqeqeq</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>sourceObj <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> destObj<span class="token punctuation">;</span>
+
+  <span class="token keyword">do</span> <span class="token punctuation">{</span>
+    props <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyNames</span><span class="token punctuation">(</span>sourceObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    i <span class="token operator">=</span> props<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">--</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      prop <span class="token operator">=</span> props<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">!</span>propFilter <span class="token operator">||</span> <span class="token function">propFilter</span><span class="token punctuation">(</span>prop<span class="token punctuation">,</span> sourceObj<span class="token punctuation">,</span> destObj<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>merged<span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        destObj<span class="token punctuation">[</span>prop<span class="token punctuation">]</span> <span class="token operator">=</span> sourceObj<span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        merged<span class="token punctuation">[</span>prop<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    sourceObj <span class="token operator">=</span> filter <span class="token operator">!==</span> <span class="token boolean">false</span> <span class="token operator">&amp;&amp;</span> Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>sourceObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>sourceObj <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token operator">!</span>filter <span class="token operator">||</span> <span class="token function">filter</span><span class="token punctuation">(</span>sourceObj<span class="token punctuation">,</span> destObj<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> sourceObj <span class="token operator">!==</span> <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> destObj<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="endswith"><a href="#endswith" class="header-anchor">#</a> endsWith</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Determines whether a string ends with the characters of a specified string
+ *
+ * @param {String} str
+ * @param {String} searchString
+ * @param {Number} [position= 0]
+ *
+ * @returns {boolean}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">endsWith</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span> searchString<span class="token punctuation">,</span> position</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  str <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>position <span class="token operator">===</span> <span class="token keyword">undefined</span> <span class="token operator">||</span> position <span class="token operator">&gt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    position <span class="token operator">=</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  position <span class="token operator">-=</span> searchString<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> lastIndex <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>searchString<span class="token punctuation">,</span> position<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> lastIndex <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> lastIndex <span class="token operator">===</span> position<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="toarray"><a href="#toarray" class="header-anchor">#</a> toArray</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Returns new array from array like object or null if failed
+ *
+ * @param {*} [thing]
+ *
+ * @returns {?Array}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">toArray</span><span class="token punctuation">(</span><span class="token parameter">thing</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>thing<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isArray</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> thing<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> i <span class="token operator">=</span> thing<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isNumber</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">--</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> thing<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="istypedarray"><a href="#istypedarray" class="header-anchor">#</a> isTypedArray</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * Checking if the Uint8Array exists and if it does, it returns a function that checks if the
+ * thing passed in is an instance of Uint8Array
+ *
+ * @param {TypedArray}
+ *
+ * @returns {Array}
+ */</span>
+<span class="token comment">// eslint-disable-next-line func-names</span>
+<span class="token keyword">var</span> isTypedArray <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">TypedArray</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// eslint-disable-next-line func-names</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">thing</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> TypedArray <span class="token operator">&amp;&amp;</span> thing <span class="token keyword">instanceof</span> <span class="token class-name">TypedArray</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> Uint8Array <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>Uint8Array<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="foreachentry"><a href="#foreachentry" class="header-anchor">#</a> forEachEntry</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * For each entry in the object, call the function with the key and value.
+ *
+ * @param {Object&lt;any, any&gt;} obj - The object to iterate over.
+ * @param {Function} fn - The function to call for each entry.
+ *
+ * @returns {void}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">forEachEntry</span><span class="token punctuation">(</span><span class="token parameter">obj<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> generator <span class="token operator">=</span> obj <span class="token operator">&amp;&amp;</span> obj<span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>iterator<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> iterator <span class="token operator">=</span> <span class="token function">generator</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> result<span class="token punctuation">;</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>result <span class="token operator">=</span> iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>result<span class="token punctuation">.</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> pair <span class="token operator">=</span> result<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> pair<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> pair<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="matchall"><a href="#matchall" class="header-anchor">#</a> matchAll</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/**
+ * It takes a regular expression and a string, and returns an array of all the matches
+ *
+ * @param {string} regExp - The regular expression to match against.
+ * @param {string} str - The string to search.
+ *
+ * @returns {Array&lt;boolean&gt;}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">matchAll</span><span class="token punctuation">(</span><span class="token parameter">regExp<span class="token punctuation">,</span> str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> matches<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>matches <span class="token operator">=</span> regExp<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>matches<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> arr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="ishtmlform"><a href="#ishtmlform" class="header-anchor">#</a> isHTMLForm</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/* Checking if the kindOfTest function returns true when passed an HTMLFormElement. */</span>
+<span class="token keyword">var</span> isHTMLForm <span class="token operator">=</span> <span class="token function">kindOfTest</span><span class="token punctuation">(</span><span class="token string">'HTMLFormElement'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="hasownproperty"><a href="#hasownproperty" class="header-anchor">#</a> hasOwnProperty</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/* Creating a function that will check if an object has a property. */</span>
+<span class="token keyword">var</span> hasOwnProperty <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">resolver</span><span class="token punctuation">(</span><span class="token parameter">_hasOwnProperty</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">obj<span class="token punctuation">,</span> prop</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">_hasOwnProperty</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> prop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hasOwnProperty<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div></div>  <div class="page-edit"><div class="edit-link"><a href="https://github.com/kuki/edit/master/docs/20.common/10.snippets/20.part02.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/06/26, 04:09:54</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/common/core/p1/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Common：Part01</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/common/core/p1/" class="prev">Common：Part01</a></span> <!----></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/fastest/core/p1/"><div>
+            Fastest：part01
+            <!----></div></a> <span class="date">06-26</span></dt></dl><dl><dd>02</dd> <dt><a href="/polyfill/core/p1/"><div>
+            Polyfill：Part01
+            <!----></div></a> <span class="date">06-26</span></dt></dl><dl><dd>03</dd> <dt><a href="/polyfill/core/p2/"><div>
+            Polyfill：Part02
+            <!----></div></a> <span class="date">06-26</span></dt></dl> <dl><dd></dd> <dt><a href="/archives" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:jonsam.ng@foxmail.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/jonsam-ng" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://www.jonsam.site" title="博客" target="_blank" class="iconfont icon-mao"></a><a href="https://docs.jonsam.site" title="文档" target="_blank" class="iconfont icon-shuben"></a><a href="https://source.jonsam.site" title="源码" target="_blank" class="iconfont icon-code"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2022-2022
+    <span>Kuki | Template by <a href="https://jonsam-ng.github.io/fancy-note-starter/">Fancy Note Starter</a> | Made by <a href=https://www.jonsam.site target="_blank">jonsam</a> with ❤</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div><!----><!----><div></div><div></div></div></div>
+    <script src="/assets/js/app.7687b9df.js" defer></script><script src="/assets/js/11.d84cac13.js" defer></script><script src="/assets/js/34.04ec7b42.js" defer></script><script src="/assets/js/20.6ea0bf9f.js" defer></script><script src="/assets/js/15.ed16f0da.js" defer></script><script src="/assets/js/13.ed8cf36c.js" defer></script>
+  </body>
+</html>
